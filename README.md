@@ -15,7 +15,7 @@
 
 ### 自动获取工具
 本工具的作用是批量登录账号，获取Cookie
-![工具界面](.\Image\自动登录工具界面.png)
+![工具界面](https://github.com/MengLuwa/XiangTing/blob/master/Image/自动登录工具界面.png)
 
 点击打开账号文件按钮，选择账号文件
 
@@ -51,7 +51,7 @@ AnaClar12810614:xxxxx:milxxxxxia00@outlook.com:xxxxxx
 
 登陆之后，可以看到类似这样的提示：
 
-![获取Cookie成功](.\Image\获取Cookie成功.png)
+![获取Cookie成功](https://github.com/MengLuwa/XiangTing/blob/master/Image/获取Cookie成功.png)
 
 账号文件同目录下可以看到一个Cookie文件，这个就是我们的身份信息了
 
@@ -60,7 +60,7 @@ AnaClar12810614:xxxxx:milxxxxxia00@outlook.com:xxxxxx
 
 选择Application(应用)这一栏，找到Cookie：
 
-![获取Cookie](.\Image\获取Cookie.png)
+![获取Cookie](https://github.com/MengLuwa/XiangTing/blob/master/Image/获取Cookie.png)
 
 这里有三个值，ct0，auth_token，_twitter_sess，这三个是我们需要的
 
@@ -75,7 +75,7 @@ auth_token;ct0;_twitter_sess;用户名
 ## 第二步，载入箱庭
 打开箱庭工具，选项，添加角色，找到之前的Cookie文件，载入：
 
-![载入角色](.\Image\载入角色.png)
+![载入角色](https://github.com/MengLuwa/XiangTing/blob/master/Image/载入角色.png)
 
 载入角色之后可以看到角色出现在列表中了，接下来就是选择任务和计划功能了
 
