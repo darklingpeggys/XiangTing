@@ -1,1 +1,11 @@
-测试公告
+当前版本为V1.0.0
+目前包含插件BlueBird_Play.dll，包含功能：
+	批量关注任务
+	批量点赞任务
+	回复推文任务
+	批量转推任务
+	随机推文任务
+	自动活跃计划
+	攻击Tag计划
+
+详细参见链接：https://github.com/MengLuwa/XiangTing

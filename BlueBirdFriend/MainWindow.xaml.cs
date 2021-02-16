@@ -72,7 +72,11 @@ namespace BlueBirdFriend
                     Console.Write(ex.Message);
                 }
             }
-
+            string info = Tool.GetInfo();
+            if (info != "")
+            {
+                MessageBox.Show(info);
+            }
         }
 
         private void ITaskPlugin_Click(object sender, RoutedEventArgs e)
