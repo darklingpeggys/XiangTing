@@ -6,6 +6,8 @@
 
 有做插件开发接口，之后会写开发手册，可以自行尝试增加功能
 
+当前正在做更加合适的养号插件，相关养号策略收集中，欢迎讨论
+
 ## 第一步，获取登录信息
 本工具不采用多号登录的方式进行操作，而是使用身份信息来完成相关行为，因此添加账号到工具中采用的是输入Cookie文件的方式
 
@@ -90,3 +92,8 @@ auth_token;ct0;_twitter_sess;用户名
 冲蝗从来都是破坏行动，不要妄想我们能保护什么，拿上武器的人做的只有摧毁敌人
 
 祝各位武运昌隆！
+
+## 相关链接
+[箱庭下载](https://github.com/MengLuwa/XiangTing/releases/tag/箱庭v1.0.0)
+[毛子军火库](https://accsmarket.com)
+[接码平台](https://smspva.com)https://accsmarket.com
