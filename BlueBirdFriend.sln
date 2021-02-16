@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBird_Play", "BlueBird_P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueBird_Plugin", "BlueBird_Plugin\BlueBird_Plugin.csproj", "{A7DD153D-809A-45FE-92DE-0FFF20DE488B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLoginTest", "..\AutoLoginTest\AutoLoginTest\AutoLoginTest.csproj", "{7E2FA355-AA64-4E1D-A7AD-B700EA22AE0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLoginTest", "AutoLoginTest\AutoLoginTest.csproj", "{7E2FA355-AA64-4E1D-A7AD-B700EA22AE0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
