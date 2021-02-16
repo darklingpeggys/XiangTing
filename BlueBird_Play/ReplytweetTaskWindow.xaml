@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlueBird_Play"
         mc:Ignorable="d"
-        Title="回复推文任务" Height="450" Width="800">
+        Title="回复推文任务" Height="450" Width="800" Icon="兔.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlueBirdFriend"
         mc:Ignorable="d"
-        Title="箱庭" Height="450" Width="800" Closed="Window_Closed">
+        Title="箱庭" Height="450" Width="800" Closed="Window_Closed" Icon="兔.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>

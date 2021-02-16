@@ -216,7 +216,7 @@ namespace BlueBirdFriend
         }
         private void MenuItem_Click_关于我们(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("©CN Andy.保留所有权利\nby Mengluu");
+            MessageBox.Show("©CN Andy.不保留所有权利\nby Mengluu");
         }
         private void MenuItem_Click_刷新角色列表(object sender, RoutedEventArgs e)
         {

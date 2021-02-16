@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlueBird_Play"
         mc:Ignorable="d"
-        Title="添加自动活跃任务" Height="400" Width="600">
+        Title="添加自动活跃任务" Height="400" Width="600" Icon="兔.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="18*"></RowDefinition>

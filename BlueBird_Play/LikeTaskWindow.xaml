@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlueBird_Play"
         mc:Ignorable="d"
-        Title="添加点赞任务" Height="250" Width="400">
+        Title="添加点赞任务" Height="250" Width="400" Icon="兔.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"></ColumnDefinition>
