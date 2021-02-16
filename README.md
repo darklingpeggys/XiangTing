@@ -95,5 +95,7 @@ auth_token;ct0;_twitter_sess;用户名
 
 ## 相关链接
 [箱庭下载](https://github.com/MengLuwa/XiangTing/releases/tag/箱庭v1.0.0)
+
 [毛子军火库](https://accsmarket.com)
-[接码平台](https://smspva.com)https://accsmarket.com
+
+[接码平台](https://smspva.com)
