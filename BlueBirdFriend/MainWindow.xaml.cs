@@ -72,6 +72,7 @@ namespace BlueBirdFriend
                     Console.Write(ex.Message);
                 }
             }
+
         }
 
         private void ITaskPlugin_Click(object sender, RoutedEventArgs e)
@@ -136,7 +137,7 @@ namespace BlueBirdFriend
         }
         private void SelectAll_Click(object sender, RoutedEventArgs e)
         {
-            if (SelectAll.Content == "全选")
+            if ((string)SelectAll.Content == "全选")
             {
                 foreach (Grid box in CharacterList.Items)
                 {
