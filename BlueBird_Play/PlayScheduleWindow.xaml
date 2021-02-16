@@ -1,0 +1,268 @@
+﻿<Window x:Class="BlueBird_Play.PlayScheduleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlueBird_Play"
+        mc:Ignorable="d"
+        Title="添加自动活跃任务" Height="400" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <TabControl>
+            <TabItem Header="计划设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="计划间隔时间t/s" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_time" Text="240" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="计划监控内容" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_target" Text="#Biden" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="推文类内容寿命" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_life" Text="4" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <CheckBox Name="setting_isFavorite" Content="是否自动点赞" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_isFo" Content="是否自动关注" Grid.Row="7" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="settinf_isRetweet" Content="是否自动转推" Grid.Row="7" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_isCopy" Content="是否自动复刻热推" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_isReply" Content="是否自动复刻热评" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="点赞设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="要求至少点赞次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_favorite_r_favorited" Text="0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少转推次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_favorite_r_retweeted" Text="0" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少回复次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_favorite_r_reply" Text="0" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少引用次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_favorite_r_quote" Text="0" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="转推设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="要求至少点赞次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_retweet_r_favorited" Text="0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少转推次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_retweet_r_retweeted" Text="0" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少回复次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_retweet_r_reply" Text="0" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少引用次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_retweet_r_quote" Text="0" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="关注设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="要求至少点赞次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_follow_r_favorited" Text="0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少转推次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_follow_r_retweeted" Text="0" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少回复次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_follow_r_reply" Text="0" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少引用次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_follow_r_quote" Text="0" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="复刻推文设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="要求至少点赞次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_copy_r_favorited" Text="0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少转推次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_copy_r_retweeted" Text="0" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少回复次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_copy_r_reply" Text="0" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少引用次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_copy_r_quote" Text="0" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <CheckBox Name="setting_copy_r_media" Content="是否允许包含媒体" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_copy_r_users" Content="是否允许包含艾特" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_copy_r_hashtag" Content="是否允许包含Tag" Grid.Row="9" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="复刻热评设定">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                        <ColumnDefinition Width="1*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                        <RowDefinition Height="2*"></RowDefinition>
+                        <RowDefinition Height="1*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Content="要求至少点赞次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_reply_r_favorited" Text="0" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少转推次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_reply_r_retweeted" Text="0" Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少回复次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_reply_r_reply" Text="0" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label Content="要求至少引用次数" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <TextBox Name="setting_reply_r_quote" Text="0" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <CheckBox Name="setting_reply_r_media" Content="是否允许包含媒体" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_reply_r_users" Content="是否允许包含艾特" Grid.Row="9" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+                    <CheckBox Name="setting_reply_r_hashtag" Content="是否允许包含Tag" Grid.Row="9" Grid.Column="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+        
+        
+        <Button Name="Submit" Content="确认" Grid.Row="9" Grid.Column="3" Grid.ColumnSpan="4" Click="Submit_Click"/>
+    </Grid>
+</Window>
